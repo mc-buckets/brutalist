@@ -1,0 +1,41 @@
+@mixin breakpoint($point)
+  @if $point == full
+    @media (min-width: 75em) 
+      @content 
+
+  @if $point == large
+    @media (min-width: 65em) 
+      @content 
+
+  @else if $point == medium
+    @media (min-width: 55em) 
+      @content 
+  
+  @else if $point == small
+    @media (min-width: 37.5em)  
+      @content 
+  
+@mixin text-truncate
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+@mixin opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie) //IE8
+
+@mixin center-block
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+// @mixin placeholder
+//   &::-webkit-input-placeholder 
+//     @content
+//   &:-moz-placeholder           
+//     @content
+//   &::-moz-placeholder          
+//     @content
+//   &:-ms-input-placeholder      
+//     @content 
