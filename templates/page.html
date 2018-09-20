@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block head %}
   {{ super() }}
-  {% if page.summary %}
-    <meta name="description" content="{{ page.summary }}" />
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
   {% endif %}
 
   {% for tag in page.tags %}
@@ -24,13 +24,13 @@
 {% endif %}
 <meta name="twitter:site" content="{{ TWITTER_USERNAME }}">
 <meta name="twitter:title" content="{{ page.title }}">
-<meta name="twitter:description" content="{{ page.summary }}">
+<meta name="twitter:description" content="{{ page.description }}">
 {% endblock twittercard %}
 <!-- OG Tags -->
 {% block ogtags %}
 <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
 <meta property="og:title" content="{{ SITENAME }} | {{ page.title }}" />
-<meta property="og:description" content="{{ page.summary }}" />
+<meta property="og:description" content="{{ page.description }}" />
 {% if page.cover_image %}
 <meta property="og:image" content="{{ SITEURL }}/images/{{ page.cover_image }}" />
 {% endif %}
