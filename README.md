@@ -74,6 +74,7 @@ TELEGRAM = 'https://t.me/mcman_s'
 GOODREADS = 'https://www.goodreads.com/user/show/48849158-matthew-mcmanus'
 FOURSQUARE = 'https://foursquare.com/mcman_s'
 UNTAPPD = 'https://untappd.com/user/mcman_s'
+LINKEDIN = 'https://www.linkedin.com/in/mamcmanus/'
 ## Disqus Sitename for comments on posts
 ## Commenting mine out for this theme site
 DISQUS_SITENAME = 'brutalistpelican'
