@@ -86,7 +86,7 @@
                 <ul>
                     {% if DISPLAY_PAGES_ON_MENU %}
                       {% for p in pages %}
-                        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.slug }}</a></li>
+                        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.slug | replace('-', ' ') }}</a></li>
                       {% endfor %}
                     {% endif %}
                     {% for title, link in MENUITEMS %}
