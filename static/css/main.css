@@ -355,8 +355,9 @@ div#masthead nav#menu {
   }
 }
 div#masthead nav#menu#menu.active {
-  max-height: 15em;
+  max-height: 100%;
   padding: 2em 0;
+  overflow: visible;
 }
 div#masthead nav#menu ul {
   border-top: 1px solid #808080;
